@@ -12,7 +12,7 @@ function draw(){
   count = (count + 1) % cycle;
   // BLANK[1]
   noStroke()
-  if(mouseIsPressed){
+  if(keyIsDown(" ".charCodeAt(0))){
     background(0, 0, 255);
     fill(255,0,0);
     if(count < 1/4 * cycle){
