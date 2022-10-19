@@ -13,8 +13,7 @@ function setup(){
 }
 function draw(){
   background(136,236,250);
-  let gy = height - ground;
-  fill(250)
+  let gy = height - ground; 
   line(0, gy, width, gy);
   fill(255,99,71)
   ellipse(x, y, size, size);
