@@ -70,8 +70,9 @@ function setup(){
   }
 
   // BLANK[5] 平均点の線を引きます
+  text(average.toPrecision(3), 0, height - height * average / 100 - 2);
   stroke(0,255,0);
-  line(0, height * average / 100, width, height * average / 100);
+  line(0, height - height * average / 100, width, height - height * average / 100);
   
   
 }
