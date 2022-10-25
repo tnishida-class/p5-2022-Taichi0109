@@ -22,9 +22,10 @@ function setup(){
     // BLANK[1]
     
     px = (i - 1) * dx + 20;
-    py = height * scores[i - 1] / 100;
+    py = height - height * scores[i - 1] / 100;
     stroke(0);
-    line( px, py, i * dx + 20, height * scores[i] / 100);
-    ellipse( i * dx + 20, height * scores[i] / 100, 10);
+    line( px, py, i * dx + 20, height - height * scores[i] / 100);
+    ellipse( i * dx + 20, height - height * scores[i] / 100, 10);
   }
+  console.log(scores);
 }
