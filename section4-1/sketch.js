@@ -28,9 +28,6 @@ function setup(){
     if(largest < scores[i]){
       largest = scores[i];
     }
-    else{
-      largest = largest;
-    }
   }
 
   smallest = 100;
@@ -38,9 +35,6 @@ function setup(){
     // BLANK[3]　ヒント：最小値とだいたい同じ
     if(smallest > scores[i]){
       smallest = scores[i];
-    }
-    else{
-      smallest = smallest;
     }
   }
 
