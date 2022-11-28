@@ -1,7 +1,6 @@
 // 最終課題を制作しよう
 
 function setup() {
-  //angle = 0;
   const green = color(0, 255, 0);
   const red = color(255, 0, 0);
   const black = color(0);
