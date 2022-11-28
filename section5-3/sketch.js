@@ -27,6 +27,7 @@ function isLeapYear(y){
 
 function daysInYear(y){
   // BLANK[1]
+  return isLeapYear(y)? 366: 365;
 }
 
 function daysInMonth(y, m){
@@ -51,6 +52,7 @@ function dayOfYear(y, m, d){
 
 function dayOfWeek(y, m, d){
   // BLANK[2]
+  
 }
 
 function dayOfWeekAsString(dow){

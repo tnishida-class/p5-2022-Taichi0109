@@ -20,5 +20,18 @@ function setup(){
   let px, py; // 線を引くために一つ前の点を覚えておく変数
   for(let i = 0; i < scores.length; i++){
     // BLANK[1]
+    const h = height * scores[i] / 100;
+    if(i == 0){
+      ellipse(dx - 20, h, 10);
+      px = dx - 20;
+      py = h;
+    }
+    else{
+    line( i * dx + 20, height - h, px, py);
+    ellipse( i * dx + 20, height - h, 10);
+    px = i * dx + 20;
+    py = height - h;
+    }
   }
+  console.log(scores);
 }
